@@ -1216,7 +1216,7 @@ async def reload(ctx: Context) -> Optional[str]:
 async def server(ctx: Context) -> Optional[str]:
     """Retrieve performance data about the server."""
 
-    build_str = f"bancho.py v{app.settings.VERSION} ({app.settings.DOMAIN})"
+    build_str = f"its.moe v{app.settings.VERSION} ({app.settings.DOMAIN})"
 
     # get info about this process
     proc = psutil.Process(os.getpid())
@@ -2445,7 +2445,7 @@ async def clan_list(ctx: Context) -> Optional[str]:
     if offset >= total_clans:
         return "No clans found."
 
-    msg = [f"bancho.py clans listing ({total_clans} total)."]
+    msg = [f"its.moe clans listing ({total_clans} total)."]
 
     for idx, clan in enumerate(app.state.sessions.clans, offset):
         msg.append(f"{idx + 1}. {clan!r}")
