@@ -371,15 +371,15 @@ WELCOME_MSG = "\n".join(
     (
         f"Welcome to {BASE_DOMAIN}.",
         "To see a list of commands, use !help.",
-        "We have a public (Discord)[https://discord.gg/ShEQgUx]!",
-        "Enjoy the server!",
+        "We have a public (Discord)[https://discord.gg/UybGG3tD7q]!",
+        "Enjoy, and don't be afraid to ask for help!",
     ),
 )
 
 RESTRICTED_MSG = (
     "Your account is currently in restricted mode. "
     "If you believe this is a mistake, or have waited a period "
-    "greater than 3 months, you may appeal via the form on the site."
+    "greater than 3 months, you may appeal via our (Discord)[https://discord.gg/UybGG3tD7q]."
 )
 
 WELCOME_NOTIFICATION = app.packets.notification(
@@ -387,7 +387,7 @@ WELCOME_NOTIFICATION = app.packets.notification(
 )
 
 OFFLINE_NOTIFICATION = app.packets.notification(
-    "The server is currently running in offline mode; "
+    "its.moe is currently running in offline mode; "
     "some features will be unavailable.",
 )
 
