@@ -200,7 +200,7 @@ async def roll(ctx: Context) -> Optional[str]:
     if max_roll == 0:
         return "Roll what?"
 
-    points = random.randrange(0, max_roll)
+    points = random.randrange(1, max_roll+1)
     return f"{ctx.player.name} rolls {points} points!"
 
 
